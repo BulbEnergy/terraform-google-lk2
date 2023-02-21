@@ -1,1 +1,1 @@
-# orris-terraform-module-template
+# Orris terraform module template
