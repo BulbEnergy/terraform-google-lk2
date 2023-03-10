@@ -1,0 +1,15 @@
+version: 2.1
+
+orbs:
+  bulb: bulbenergy/ci@1.9.0
+
+workflows:
+  main:
+    jobs:
+      # default branch runs release job to create tags etc.
+      - bulb/semantic-release:
+          context:
+            - bulb-bot
+          filters:
+            branches:
+              only: main
